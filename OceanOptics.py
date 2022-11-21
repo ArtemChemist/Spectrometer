@@ -3,23 +3,16 @@
 
 # python module to communicate with an Ocena Optics USB spectrometer
 #
-# Copyright (C) Wolfgang Schoenfeld (wolfgang.schoenfeld@hzg.de) and
-#               Carsten Frank       (carsten.frank@hzg.de)
+# Based on the original 2012 work by
+# Wolfgang Schoenfeld (wolfgang.schoenfeld@hzg.de) and
+# Carsten Frank       (carsten.frank@hzg.de)
+# also based on the documentation given in the USB4000-OEM_Data-Sheet.pdf
+# which is publicly available (http://www.oceanoem.com/).
 #
-#       This program is free software; you can redistribute it and/or
-#       modify it under the terms of the GNU General Public License as
-#       published by the Free Software Foundation, version 2.
-#
-# This module is suitable to control a Avantes USB spectrometer. The following
-# types are supported:
+# This module is suitable to control a Avantes USB spectrometer.
+# The following types are supported:
 # - USB 4000
 # - probably USB 2000
-
-# C H A N G E S #
-# 28. 07. 2012 Carsten Frank
-# - created based on the Hamamatsu code
-# - also based on the documentation given in the USB4000-OEM_Data-Sheet.pdf
-#   which is publicly available (http://www.oceanoem.com/).
 
 import os
 import os.path
