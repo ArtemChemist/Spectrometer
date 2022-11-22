@@ -313,7 +313,7 @@ class USB4000: ## GUI OoUSB4000 ## Adds this device to the spectrometers listed 
                         break
                 time.sleep(.01)
                 devIT = self.getIntegrationTime()
-                print "setIntTime : %d  ----  deviceIntTime : %d" % (devIT, intTime)
+                print ("setIntTime : %d  ----  deviceIntTime : %d" % (devIT, intTime))
                 if devIT == intTime:
                         break
                 if (time.time() - startT) > 1.0:
