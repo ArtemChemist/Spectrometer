@@ -160,10 +160,10 @@ class USB4000: ## GUI OoUSB4000 ## Adds this device to the spectrometers listed 
         # S10420-1006/-1106 CCD image sensor see documentation (Device structure)
         if (self.sensorName == "S10420-1106") or (self.sensorName == "S10420-1006"):
                 self.pixelOffset = 10
-                print "Sensor '%s' means pixel offset of %d" % (self.sensorName, self.pixelOffset)
+                print ("Sensor '%s' means pixel offset of %d" % (self.sensorName, self.pixelOffset))
         elif (self.sensorName.find("S8377") > -1) or (self.sensorName.find("S8378") > -1):
                 self.pixelOffset = 0
-                print "Sensor '%s' means pixel offset of %d" % (self.sensorName, self.pixelOffset)
+                print ("Sensor '%s' means pixel offset of %d" % (self.sensorName, self.pixelOffset))
 
 
 
