@@ -206,10 +206,10 @@ class USB4000: ## GUI OoUSB4000 ## Adds this device to the spectrometers listed 
                         if mtch:
                                 serNr = open(os.path.join(basePath, i, "serial_number"), "r").read().strip()
                                 res = getDeviceFileFromAddress("usb", i)
-                                if len(res) <> 1:
+                                if len(res) != 1:
                                         print("Something went wrong. I found two USB devices with the same path!")
                                         for i in res:
-                                                print i
+                                                print (i)
                                         print("PLEASE call someone (Carsten) who knows what to do now!")
                                         sys.exit()
 
