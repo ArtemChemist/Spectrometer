@@ -195,8 +195,8 @@ class USB4000: ## GUI OoUSB4000 ## Adds this device to the spectrometers listed 
         basePath = "/sys/bus/usb/drivers/usbhspec/"
         if not os.path.exists(basePath):
                 self.usedInterface = "pyusb"
-                print "No spectrometer found using the kernel module."
-                print "Now testing pyusb!"
+                print ("No spectrometer found using the kernel module.")
+                print ("Now testing pyusb!")
 
         if self.usedInterface == "kernel":
                 fList = os.listdir(basePath)
