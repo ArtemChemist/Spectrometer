@@ -176,7 +176,7 @@ class USB4000: ## GUI OoUSB4000 ## Adds this device to the spectrometers listed 
                                   (pix**3)*self.thirdKoeff   + \
                                   (pix**4)*self.fourthKoeff  + \
                                   (pix**5)*self.fifthKoeff
-        print self.wlArr
+        print (self.wlArr)
 
     def findAllConnectedSpectrometers(self):
             return self.specs
