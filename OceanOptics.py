@@ -269,7 +269,7 @@ class USB4000: ## GUI OoUSB4000 ## Adds this device to the spectrometers listed 
                         del(self.ep1Out, self.ep1In)
                         specs[serNr] = ( 'pyusb'   ,  None    ,  "%.0f" % (float(a0)), dev)
         else:
-                print "This point should never be reached!"
+                print ("This point should never be reached!")
                 sys.exit()
 
         if len(specs) == 0:
@@ -294,8 +294,8 @@ class USB4000: ## GUI OoUSB4000 ## Adds this device to the spectrometers listed 
     def setIntegrationTime(self, intTime, test=True):
         # integration_time possible values between 10 - 65535000 (in usec)
         if (intTime < 10) or  (intTime > 65535000):
-                print "USB4000.setIntegrationTime : Integration Time not allowed! please use vaues between"
-                print "10 and 65535000 µs"
+                print ("USB4000.setIntegrationTime : Integration Time not allowed! please use vaues between")
+                print ("10 and 65535000 µs")
                 return False
         while True:
                 if   self.usedInterface == 'pyusb':
